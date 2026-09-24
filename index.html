@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Urdu Voice Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #059669;
+            --primary-light: #10b981;
+            --primary-dark: #047857;
+            --accent: #06b6d4;
+            --bg-dark: #0f172a;
+            --card-dark: #1e293b;
+            --border-dark: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-accent: #34d399;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--card-dark);
+            border: 1px solid var(--border-dark);
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 36px;
+            border-bottom: 1px solid var(--border-dark);
+            margin-bottom: 36px;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--text-accent);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .app-title {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .urdu-subtitle {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            font-size: 1.35rem;
+            color: var(--text-accent);
+            margin-bottom: 12px;
+            direction: rtl;
+        }
+
+        .meta-info {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: linear-gradient(to bottom, var(--primary-light), var(--accent));
+            border-radius: 2px;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 16px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 28px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            font-size: 0.975rem;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary-light);
+            font-weight: 800;
+        }
+
+        .highlight-box {
+            background: rgba(6, 182, 212, 0.08);
+            border: 1px solid rgba(6, 182, 212, 0.25);
+            border-radius: 16px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box h4 {
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .highlight-box p {
+            color: #cbd5e1;
+            margin-bottom: 0;
+            font-size: 0.925rem;
+        }
+
+        .contact-card {
+            background: rgba(16, 185, 129, 0.08);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-card h3 {
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .contact-email {
+            display: inline-block;
+            color: var(--text-accent);
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            margin-top: 6px;
+            padding: 8px 18px;
+            background: rgba(16, 185, 129, 0.15);
+            border-radius: 10px;
+            transition: all 0.2s ease;
+        }
+
+        .contact-email:hover {
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-dark);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 16px 12px;
+            }
+            .container {
+                padding: 24px 18px;
+                border-radius: 18px;
+            }
+            .app-title {
+                font-size: 1.75rem;
+            }
+            .urdu-subtitle {
+                font-size: 1.15rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="app-badge">
+                <span>🛡️ Official Privacy Policy</span>
+            </div>
+            <h1 class="app-title">Urdu Voice Calculator</h1>
+            <div class="urdu-subtitle">اردو بولتا کیلکولیٹر - پرائیویسی پالیسی</div>
+            <div class="meta-info">
+                <strong>Package Name:</strong> com.sajidailab.urduvoicecalculator &nbsp;|&nbsp; 
+                <strong>Developer:</strong> Sajid AI Lab &nbsp;|&nbsp; 
+                <strong>Last Updated:</strong> September 2026
+            </div>
+        </div>
+
+        <!-- Section 1: Overview -->
+        <div class="section">
+            <h2 class="section-title">1. Introduction & Overview</h2>
+            <p>Welcome to <strong>Urdu Voice Calculator</strong> (referred to as "the App", "we", "us", or "our"), developed by <strong>Sajid AI Lab</strong>. We are fully committed to protecting your privacy and ensuring your personal information is safe.</p>
+            <p>This Privacy Policy explains how our mobile application handles user data, permissions, and device storage in compliance with the Google Play Developer Policy, GDPR, and other global data protection standards.</p>
+        </div>
+
+        <!-- Highlight Box: Zero Data Collection -->
+        <div class="highlight-box">
+            <h4>🔒 Zero Personal Data Collection Guarantee</h4>
+            <p>Urdu Voice Calculator operates 100% offline. We do <strong>NOT</strong> collect, store, transmit, sell, or share any personal identity information, mathematical calculations, voice recordings, or history to any external servers or third parties.</p>
+        </div>
+
+        <!-- Section 2: Data Usage & Features -->
+        <div class="section">
+            <h2 class="section-title">2. Information We Process & How It Is Handled</h2>
+            <p>The App performs all calculations, voice processing, and settings locally on your device:</p>
+            <ul>
+                <li><strong>Local Calculation History:</strong> Your calculation equations and results are saved securely in a local database on your device (SQLite / Room Database). This data never leaves your smartphone and can be deleted by you at any time with the "Clear History" button.</li>
+                <li><strong>Voice Recognition (Speech Input):</strong> When you use the voice input feature to dictate numbers or formulas, speech-to-text processing is handled through standard Android speech services. We do not store or transmit your voice clips.</li>
+                <li><strong>Text-to-Speech (TTS Voice Output):</strong> When the app speaks results in Urdu, Arabic, English, or Hindi, it uses your device's built-in Android Text-To-Speech engine. No audio data is uploaded to any server.</li>
+                <li><strong>App Preferences:</strong> Your selected theme (3D Cards, Classic, Neo, Emerald), speech speed, pitch, and language choices are stored locally using Android SharedPreferences / DataStore.</li>
+            </ul>
+        </div>
+
+        <!-- Section 3: Device Permissions -->
+        <div class="section">
+            <h2 class="section-title">3. Device Permissions Required</h2>
+            <p>To deliver its core features, Urdu Voice Calculator may request the following standard Android permissions:</p>
+            <ul>
+                <li><strong>RECORD_AUDIO / Microphone:</strong> Used exclusively when you tap the microphone button to perform voice-guided calculations. Audio is processed transiently and is never recorded or saved.</li>
+                <li><strong>VIBRATE:</strong> Used solely to provide tactile haptic feedback when you press buttons on the calculator keypad.</li>
+            </ul>
+        </div>
+
+        <!-- Section 4: Children's Privacy -->
+        <div class="section">
+            <h2 class="section-title">4. Children's Privacy (COPPA Compliance)</h2>
+            <p>Our application includes educational learning modules (Urdu Counting 1-100, Multiplication Tables 1-20, and Place Values) suitable for students and children. We strictly uphold children's privacy standards:</p>
+            <ul>
+                <li>We do not collect any personal information from children under 13 years of age.</li>
+                <li>The App contains no behavioral tracking, profiling, or data harvesting.</li>
+                <li>All educational content is safe, offline, and family-friendly.</li>
+            </ul>
+        </div>
+
+        <!-- Section 5: Third-Party Services & Ads -->
+        <div class="section">
+            <h2 class="section-title">5. Third-Party Services & Analytics</h2>
+            <p>Urdu Voice Calculator does not use any third-party analytics trackers, behavioral advertising SDKs, or background location monitors. Your activity inside the app is completely private to you.</p>
+        </div>
+
+        <!-- Section 6: Security -->
+        <div class="section">
+            <h2 class="section-title">6. Data Security</h2>
+            <p>Since all data remains exclusively on your local device, its security is protected by standard Android operating system sandboxing. Uninstalling the application completely removes all locally stored calculation history and preferences.</p>
+        </div>
+
+        <!-- Section 7: Changes -->
+        <div class="section">
+            <h2 class="section-title">7. Changes to This Privacy Policy</h2>
+            <p>We may periodically update our Privacy Policy to reflect future updates or legal compliance. Any revisions will be published with an updated effective date on this page.</p>
+        </div>
+
+        <!-- Contact Card -->
+        <div class="contact-card">
+            <h3>📬 Questions or Feedback?</h3>
+            <p>If you have any questions or concerns regarding this Privacy Policy or the app, please feel free to reach out directly to the developer:</p>
+            <a href="mailto:sajidgulpk@gmail.com" class="contact-email">sajidgulpk@gmail.com</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2026 Sajid AI Lab. All rights reserved.</p>
+            <p>Urdu Voice Calculator &bull; Package: <code>com.sajidailab.urduvoicecalculator</code></p>
+        </div>
+    </div>
+
+</body>
+</html>
